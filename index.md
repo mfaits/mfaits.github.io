@@ -14,6 +14,12 @@ title: "Michelle Faits"
 
 ---
 
+<p style="margin-top: 1rem; font-size: 0.9rem;">
+  <strong>Member of the Committee to End SCAPDFATIAT</strong>  
+  · <a href="https://xkcd.com/2565/" target="_blank">[xkcd 2565]</a>
+</p>
+
+
 ## Latest posts
 
 <ul>
