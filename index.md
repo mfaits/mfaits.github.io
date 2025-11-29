@@ -3,6 +3,11 @@ layout: default
 title: "Michelle Faits"
 ---
 
+*<span style="font-size: 0.85rem;">
+  Member of the Committee to End 
+  <a href="https://xkcd.com/2565/" target="_blank">SCAPDFATIAT</a>
+</span>*
+
 <p style="margin-top: 1.5rem; font-size: 0.95rem;">
   <a href="/">Home</a> ·
   <a href="/about/">About</a> ·
@@ -13,12 +18,6 @@ title: "Michelle Faits"
 </p>
 
 ---
-
-<p style="margin-top: 1rem; font-size: 0.9rem;">
-  <strong>Member of the Committee to End SCAPDFATIAT</strong>  
-  · <a href="https://xkcd.com/2565/" target="_blank">[xkcd 2565]</a>
-</p>
-
 
 ## Latest posts
 
