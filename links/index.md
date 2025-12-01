@@ -59,7 +59,7 @@ Felt this deep in my bones when I read it. How do so many projects sit unused wh
 > grug early on in career often charge into code base waving club wildly and smash up everything, learn not good  
 > grug not say no improve system ever, quite foolish, but recommend take time understand system first especially bigger system is and is respect code working today even if not perfect”
 
-Every time I read this, I think I get a little closer to being able to solve that shipping projects problem ([Sean Goedeke’s essay](https://www.seangoedecke.com/how-to-ship/)).
+I can't explain it but this and [Sean Goedeke’s essay](https://www.seangoedecke.com/how-to-ship/) go together.
 
 ---
 
