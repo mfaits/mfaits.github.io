@@ -3,9 +3,15 @@ layout: default
 title: "Links"
 ---
 
-# A collection of essays and books I found notable
+# Notable essays and books
 
 ---
+
+## ProPublica - [Millions of Americans’ Medical Images and Data Are Available on the Internet](https://www.propublica.org/article/millions-of-americans-medical-images-and-data-are-available-on-the-internet)
+> "ProPublica independently determined how many patients could be affected in America, and found some servers ran outdated operating systems with known security vulnerabilities. Schrader said that data from more than 13.7 million medical tests in the U.S. were available online, including more than 400,000 in which X-rays and other images could be downloaded.
+The privacy problem traces back to the medical profession’s shift from analog to digital technology. Long gone are the days when film X-rays were displayed on fluorescent light boards. Today, imaging studies can be instantly uploaded to servers and viewed over the internet by doctors in their offices. In the early days of this technology, as with much of the internet, little thought was given to security."
+
+This is an example I think about often when I consider the gap between how tech feels in a tech company and how it feels as an average human walking around in America. You can spend all the time you want at work worrying about how to lock down an MCP server to protect against prompt injection attacks, but the medical data storage server at your doctor's office still has the password set to "password" (if you're lucky).
 
 ## [Paul Graham — *The Acceleration of Addictiveness*](https://www.paulgraham.com/addiction.html)
 
