@@ -7,6 +7,16 @@ title: "Links"
 
 ---
 
+## [Markus Strasser - The Business of Extracting Knowledge from Academic Publications](https://markusstrasser.org/extracting-knowledge-from-literature.html)
+>A naive system will weigh the insights extracted from a useless publication equally to a seminal work. You can correct for that by normalizing on citations and other
+tricks but that will just mimic and propagate existing biases and issues with current scientific publishing.
+>
+>For example, if I design a system that mimics the practices of an expert reader, it would result in biases towards institutions, countries, the spelling of names, clout of authors and so on. That’s either unfair, biased and unequal or it is efficient, resourceful and a reasonable response based on the reader’s priors. In the end, there is no technological solution.
+>
+>To push this point: if you believe in the great man theory of scientific progress, which has more merit than most want to admit, then why waste time making the other 99%+ of “unimportant” publications more searchable and discoverable? The “greats” (of your niche) will show up in your feed anyway, right? Shouldn’t you just follow the best institutions and ~50 top individuals and be done with your research feed?
+
+Beware signal/noise problems. It's very tempting to believe that there are great technologies out there that don't meet the filter criteria of the tastemakers and the experts (came from the wrong lab, went into the wrong journal, written in a language they can't read, was published before its time, etc.) and so if you could automate the search of all the noise, you'll fish out the great tech that everyone missed. This doesn't work, at least not today, and this article will tell you why. I think maybe the machine learning era made us think that if you just put enough noise into a computer, signal comes out, but noise in = noise out, unfortunately. This article is also a really excellent retrospective writeup of something that didn't work out, which is a useful type of article that I wish got written more often.
+
 ## ProPublica - [Millions of Americans’ Medical Images and Data Are Available on the Internet](https://www.propublica.org/article/millions-of-americans-medical-images-and-data-are-available-on-the-internet)
 > "ProPublica independently determined how many patients could be affected in America, and found some servers ran outdated operating systems with known security vulnerabilities. Schrader said that data from more than 13.7 million medical tests in the U.S. were available online, including more than 400,000 in which X-rays and other images could be downloaded.
 The privacy problem traces back to the medical profession’s shift from analog to digital technology. Long gone are the days when film X-rays were displayed on fluorescent light boards. Today, imaging studies can be instantly uploaded to servers and viewed over the internet by doctors in their offices. In the early days of this technology, as with much of the internet, little thought was given to security."
