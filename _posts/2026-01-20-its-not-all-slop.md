@@ -8,11 +8,11 @@ title: "It’s Not All Slop"
 There’s a gap between how AI feels to an engineer and to someone who doesn’t write code. In 2023 when I first was using ChatGPT to generate code for me, I told a friend that it felt like I was working in the future, like I had a [Mass Effect omni tool](https://masseffect.fandom.com/wiki/Omni-tools) on my arm while I was programming. At work and online, I hear a similar perspective. AI is making us faster, allowing us to solve harder problems and get more things done.
 
 <blockquote class="twitter-tweet">
-  <a href="https://x.com/chrisalbon/status/1835344726570270929"></a>
+  <a href="https://x.com/chrisalbon/status/1835344726570270929">View this post on X</a>
 </blockquote>
 
 <blockquote class="twitter-tweet">
-  <a href="https://x.com/paularambles/status/2009804696157073686"></a>
+  <a href="https://x.com/paularambles/status/2009804696157073686">View this post on X</a>
 </blockquote>
 
 Meanwhile, the opinions I hear from outside of tech aren’t as excited about AI. In one conversation I was asked “has AI actually changed anything about your work?” and I replied “yes, almost everything,” and I don’t think that person believed me. This doesn’t surprise me, because I’ve had two distinct AI experiences - the one where it makes me a super fast and much more effective coder, and the one where everything on the internet is slop that sounds the same with samey-looking pictures. I imagine if your experience with AI is tilted towards the slop end of the scale, and if your profession is not one where AI is an obvious booster, then AI is of course going to feel like a useless toy that makes electricity bills go up and drains the Earth of all its water. 
