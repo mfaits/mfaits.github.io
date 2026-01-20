@@ -2,6 +2,9 @@ title: "Michelle Faits"
 description: "Notes on biology, data science, and building useful tools."
 theme: jekyll-theme-minimal
 
+plugins:
+  - jekyll-feed
+
 # Optional extras you can tweak later:
 author: "Michelle Faits"
 github_username: mfaits
