@@ -15,6 +15,7 @@ title: "Michelle Faits"
   <a href="/primers/">Data Science Primers</a> ·
   <a href="/links/">Links</a> ·
   <a href="/blog/">Blog</a> ·
+  <a href="/subscribe/">Subscribe</a> ·
   <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
 </p>
 
