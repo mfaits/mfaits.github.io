@@ -10,3 +10,10 @@ plugins:
 # Optional extras you can tweak later:
 author: "Michelle Faits"
 github_username: mfaits
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post_with_subscribe
