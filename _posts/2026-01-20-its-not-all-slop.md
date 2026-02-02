@@ -1,5 +1,6 @@
 ---
 title: "It’s Not All Slop"
+category: blog
 ---
 
 **TL;DR:** AI makes problems easier to solve with technical solutions. There are lots of unsolved problems in the world in need of a technical solution. That’s good, let’s roll up our sleeves!
