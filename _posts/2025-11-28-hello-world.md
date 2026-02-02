@@ -1,5 +1,6 @@
 ---
 title: "Hello World"
+category: blog
 ---
 
 [Here’s](https://www.benkuhn.net/writing/) a good philosophy of blogging, I think.
