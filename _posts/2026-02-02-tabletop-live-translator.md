@@ -45,7 +45,7 @@ I used a DeepResearch ChatGPT call to get recommendations for what hardware to u
 - **[USB gooseneck push-to-talk microphones](https://www.dictamic.com/products/soundtech-usb-gooseneck-push-to-talk-microphone)** — ~$145 each  
   Pricey, but they have the exact push-to-talk functionality I wanted. They’re heavy enough to live permanently on a table and not slide around, and they make me feel like I’m in the UN.
 
-- **[SunFounder 7” LCD touchscreen display](https://www.sunfounder.com/products/7inch-capacitive-touchscreen?srsltid=AfmBOoraDrPde7SvwxjoPic3kJoGINBftjRCt31d52rCYdFXUhpUVWwT)s** — ~$80 each  
+- **[SunFounder 7” LCD touchscreen displays](https://www.sunfounder.com/products/7inch-capacitive-touchscreen?srsltid=AfmBOoraDrPde7SvwxjoPic3kJoGINBftjRCt31d52rCYdFXUhpUVWwT)** — ~$80 each  
   Big enough to read several back-and-forth statements at once.
 
 ---
