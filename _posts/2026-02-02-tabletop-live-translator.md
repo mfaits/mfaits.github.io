@@ -64,7 +64,7 @@ Speech-to-Text includes 60 free minutes per month, then costs about $1.44/hour. 
   This uses a cloud translation tool vs. an open source translation model. If I thought we’d use it enough that the cloud bills got hair-raising, I’d look into switching, but this solves our problems for now at an acceptable cost. It does mean this always needs a wifi connection to run.
 
 - **Specified language microphones**  
-  In this setup, one mic is always the English mic and one is always the Russian mic. This eliminates the need for any language detection, shaving off an API call and a little processing, but does mean we always have to sit at the same sides of the table. Because the mics have buttons, ChatGPT suggested a kind of button-based language toggling system (e.g. push the button twice to switch languages). Maybe in a v2..
+  In this setup, one mic is always the English mic and one is always the Russian mic. This eliminates the need for any language detection, shaving off an API call and a little processing, but does mean we always have to sit at the same sides of the table. Because the mics have buttons, ChatGPT suggested a kind of button-based language toggling system (e.g. push the button twice to switch languages). Maybe in a v2.
 
 - **Always-on screen**  
   I wanted this to be a convenient alternative to digging out a phone, so we leave the Pi on. The translator app boots at startup, so the Pi keyboard and mouse are packed away elsewhere. This has turned the translator into an old-fashioned college dorm whiteboard, in that we can leave messages for each other. I added a spoken phrase to clear the screen if needed (“system clear” in English, “система очистить” in Russian).
