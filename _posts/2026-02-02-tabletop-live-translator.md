@@ -11,6 +11,21 @@ More convenient translators are coming quickly, but I didn’t have any in my ha
 
 In this case, I wanted a face-to-face translation device on my kitchen counter or dining table. I wanted us to be able to walk up to it when we felt like having a conversation and just push a button to start.
 
+<figure style="margin: 1.5rem 0;">
+  <img src="{{ '/assets/images/table_translator_both.jpeg' | relative_url }}" alt="The tabletop translator with two screens back-to-back" style="max-width: 100%; border-radius: 8px;">
+  <figcaption style="color:#666; font-size:0.9em; margin-top:0.5rem;">
+    The tabletop translator: two translator stations at each end of the table.
+  </figcaption>
+</figure>
+
+<figure style="margin: 1.5rem 0;">
+  <img src="{{ '/assets/images/table_translator_pov.jpeg' | relative_url }}" alt="One side of the translator showing the scrolling transcript" style="max-width: 100%; border-radius: 8px;">
+  <figcaption style="color:#666; font-size:0.9em; margin-top:0.5rem;">
+    One side view.
+  </figcaption>
+</figure>
+
+
 ---
 
 ## The ChatGPT Prompt
