@@ -27,17 +27,17 @@ I used a DeepResearch ChatGPT call to get recommendations for what hardware to u
 - **Raspberry Pi 4 + case** — ~$80  
   Works well here because it has two micro-HDMI ports for driving two screens.
 
-- **USB gooseneck push-to-talk microphones** — ~$145 each  
+- **[USB gooseneck push-to-talk microphones](https://www.dictamic.com/products/soundtech-usb-gooseneck-push-to-talk-microphone)** — ~$145 each  
   Pricey, but they have the exact push-to-talk functionality I wanted. They’re heavy enough to live permanently on a table and not slide around, and they make me feel like I’m in the UN.
 
-- **SunFounder 7” LCD touchscreen displays** — ~$80 each  
+- **[SunFounder 7” LCD touchscreen display](https://www.sunfounder.com/products/7inch-capacitive-touchscreen?srsltid=AfmBOoraDrPde7SvwxjoPic3kJoGINBftjRCt31d52rCYdFXUhpUVWwT)s** — ~$80 each  
   Big enough to read several back-and-forth statements at once.
 
 ---
 
 ## Cloud Dependencies
 
-This project uses Google Cloud Speech-to-Text and the Google Translate API. Everything else runs locally on the Pi ([repo here]).
+This project uses Google Cloud Speech-to-Text and the Google Translate API. Everything else runs locally on the Pi ([repo here](https://github.com/mfaits/tabletop-translator)).
 
 Speech-to-Text includes 60 free minutes per month, then costs about $1.44/hour. Translation costs roughly $20 per million characters. The rough math[^1] suggested we’d stay well within light usage, so I don’t expect this project to ever cost more than $10/month in cloud bills.
 
