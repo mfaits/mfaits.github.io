@@ -71,6 +71,27 @@ Speech-to-Text includes 60 free minutes per month, then costs about $1.44/hour. 
 
 ---
 
+<div style="margin: 2rem 0; display: flex; justify-content: center;">
+  <iframe
+    src="https://www.youtube.com/embed/19q3ZWeraZ0"
+    title="Tabletop live translator demo"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="
+      width: 100%;
+      max-width: 720px;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      border-radius: 8px;
+    ">
+  </iframe>
+</div>
+<p style="text-align:center; color:#666; font-size:0.9em; margin-top:0.5rem;">
+  Short demo of the tabletop live translator in use.
+</p>
+
+---
+
 So, ChatGPT and I turned my dining table into a translator. I’d like to see how we use it for a while to know more about what’s missing, but a fun next version of this would be a portable translator box. I’m envisioning a container that holds the two screens on opposite faces with the wires and Pi hidden within.
 
 ---
