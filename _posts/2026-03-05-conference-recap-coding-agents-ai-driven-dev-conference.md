@@ -6,8 +6,6 @@ category: blog
 tags: [coding-agents, llm, agents, evals, devtools, mlops]
 ---
 
-# Conference Recap — Coding Agents: AI-Driven Dev Conference
-
 The [Coding Agents: AI Driven Dev Conference](https://app.mlops.community/events/coding-agents/agenda) was a one-day conference put on by the [MLOps Community](https://home.mlops.community/home/events). I recommend this group’s events, and I found this one especially useful. It was aimed at technical builders, and many of the talks included practical action steps for people building with agents.
 
 The lightning talks were especially strong, and they managed to get a lot of talented people on stage sharing very concrete advice. I walked away with several ideas that I’ve already started implementing, and being there in person gave me a really good pulse check on where engineers are right now.
@@ -28,6 +26,7 @@ The lightning talks were especially strong, and they managed to get a lot of tal
 > “We don’t really believe in PMs.”
 
 Scott Breitenother from Kilo Code said that with agentic coding, their model is that one engineer owns one feature, end to end, from design to collecting user feedback. They have a very horizontal organization where one PM owns the platform, and that’s it. This generated a lot of opinions over lunch.
+
 ---
 
 ## Most actionable takeaway
@@ -59,27 +58,30 @@ Below is a truncated output from running the tool on one of my own vibe-coded pr
 > * 15+ required environment variables scattered across code with no documentation
 > * No architecture overview or definition of done
 >  * Tests exist in CI/CD infra but no test commands are documented anywhere
+>    
 > Quick win to Score 1: Create a ~100-line CLAUDE.md with setup instructions, python -m pytest tests/, and a repo map.
-> –-
+>
 > Dimension 2: File Organization — 1/3
 > Basic layer-based structure exists, but significant mixed concerns:
-> *Type hints are present throughout (good)
-> *Error messages are generic with no resolution guidance (e.g., logging.error(f"Error loading CSV: {e}"))
-> *No feature-based subfolders (e.g., scrapers/aila/, scrapers/calbar/)
+> * Type hints are present throughout (good)
+> * Error messages are generic with no resolution guidance (e.g., logging.error(f"Error loading CSV: {e}"))
+> * No feature-based subfolders (e.g., scrapers/aila/, scrapers/calbar/)
+>   
 > To reach Score 2: Split update_attorneys.py into per-source modules under scripts/scrapers/.
 > 
 > Dimension 3: Test & Verification — 1/3
 > 172 test methods across 32 test classes in tests/test_core.py — solid unit test coverage with full mocking of external dependencies.
 > However:
-> *Tests are not protected — no .claude/settings.json, no CLAUDE.md rules
-> *Tests never run in CI/CD — deploy_lambda.yml deploys without running tests
-> *No linting, formatting, or type-checking enforcement (type hints exist in code but mypy/flake8/black are not configured)
-> *Post-commit hooks exist only for roborev code review, not test execution
+> * Tests are not protected — no .claude/settings.json, no CLAUDE.md rules
+> * Tests never run in CI/CD — deploy_lambda.yml deploys without running tests
+> * No linting, formatting, or type-checking enforcement (type hints exist in code but mypy/flake8/black are not configured)
+> * Post-commit hooks exist only for roborev code review, not test execution
+>   
 > To reach Score 2: Add test protection rules to a CLAUDE.md + add python -m unittest to the deploy workflow.
 > To reach Score 3: Add PostToolUse hooks + configure flake8/mypy/black + integrate into CI/CD as a gate.
-> –-
+> 
 > Summary
-> The codebase has solid technical fundamentals (good test coverage, working CI/CD, type hints) but zero AI collaboration infrastructure. The highest-impact improvements are: (1)          > create a CLAUDE.md, (2) add tests to the deploy workflow, and (3) split update_attorneys.py > by scraper source.
+> The codebase has solid technical fundamentals (good test coverage, working CI/CD, type hints) but zero AI collaboration  infrastructure. The highest-impact improvements are: (1) create a CLAUDE.md, (2) add tests to the deploy workflow, and (3) split update_attorneys.py > by scraper source.
  
 My favorite rules, which have already changed how I work, come from the Test & Verification dimension:
 
@@ -89,9 +91,7 @@ and
 
 > “Agents write new tests, test-first.”
 
-In other words: **TDD for agents**. Write the failing test first, then implement.
-
-I’ve been letting agents write tests for a while, it was one of the first things I outsourced to AI, but the idea of locking a baseline test suite is clever. It keeps you in control of how your project evolves.
+In other words: TDD for agents, but don't give them free rein. Write the failing test first, then implement. I’ve been letting agents write tests for a while, it was one of the first things I outsourced to AI, but the idea of locking a baseline test suite is clever. It keeps you in control of how your project evolves.
 
 Shankar’s three slides with guidance on how to optimize the three dimensions are reproduced below - I highly recommend checking out his [full slides](https://html-preview.github.io/?url=https://github.com/sshh12/coding-agents-workshop/blob/main/slides.html).
 
@@ -145,6 +145,7 @@ Shankar summarized agent-ready repositories along three dimensions. These slides
 ## Sid Bidasaria (Anthropic) — Verification, governance, and “plan mode”
 Sid’s through-line was that getting value from coding agents isn’t just about model quality—it’s about verification and workflow design. Anthropic has moved toward remote dev environments, which created surprising friction around verification (including needing a proxy setup back to a local machine). He emphasized that Claude can work with logging/observability tools, but only if you deliberately configure access. On team adoption, his advice was basically: let people experiment, and consensus will emerge around what works—then measure it (plugin marketplace + usage/download counts as a signal).
 The most practical thing I’m stealing: his heavy emphasis on plan files. He has Claude “interview” him for edge cases, then produces a high-density plan that correlates strongly with successful outcomes—and they check those plans into version control, both for humans and for future agent runs.
+
 **Why it matters:** The bottleneck shifts to trust, and plans + tailored review harnesses are how you keep trust from collapsing as PR volume explodes.
 
 ---
@@ -153,6 +154,7 @@ The most practical thing I’m stealing: his heavy emphasis on plan files. He ha
 Scott’s message was blunt and consistent with what a lot of people were hinting at: when implementation gets cheap, the process becomes the bottleneck. He described Kilo’s move toward end-to-end ownership (one engineer owns one feature, including user feedback loops) and a culture that minimizes collaboration unless it adds value (he referenced the “anti-collaboration” framing).
 
 **Why it matters:** Even “great agents” stall if the organization is still optimized for a world where coding speed is scarce.
+
 ---
 
 ## Niels Bantilan (Union AI) — The step after observability is durability
@@ -163,6 +165,7 @@ His solution pattern was essentially self-healing agents, enabled by three build
 - Global caching (don’t pay twice for the same work)
 - Intermediate state persistence (treat state like a first-class artifact you can reload)
 He anchored it with a case study building a “solutions architect” agent that maintains a huge knowledge graph—where durability and caching unlock both reliability and cost savings.
+
 **Why it matters:** If agents are going to run continuously, reliability has to be designed in—not bolted on.
 
 ---
@@ -171,8 +174,7 @@ He anchored it with a case study building a “solutions architect” agent that
 Warp’s keynote was about moving multi-agent workflows off the laptop and into a cloud runtime—basically treating agent runs like managed compute tasks. The pitch: named agents + reusable skills + scheduling + monitoring + shared infrastructure that makes it easier for teams to standardize and scale.
 This infrastructure makes it easier for teams to run large multi-agent workflows collaboratively.
 
-**Why it matters:**  
-We are in the “one engineer managing several agents” era, and local machines aren’t a great fit for that anymore.
+**Why it matters:**  We are in the “one engineer managing several agents” era, and local machines aren’t a great fit for that anymore.
 
 ---
 
@@ -180,15 +182,22 @@ We are in the “one engineer managing several agents” era, and local machines
 
 ### Pinterest (Faye Zhang) — Productionizing subagents
 Faye focused on using subagents/swarm mode to compress ML development timelines (she cited a dramatic improvement in cycle time). She listed common failure modes (drift, imbalance, memory collapse, tool misuse) and emphasized structured instructions + hooks for machine-readable outputs + customized memory systems.
+
 **Why it matters:** Once agents become part of core dev workflows, “ops for agent teams” becomes a real discipline.
+
 ### Cleric (Erin Ahmed) — Fixing agent amnesia
 Erin framed learning agents as the opposite of stateless chat sessions: agents should learn your environment, your team preferences, and corrections over time—where good corrections persist and compound.
+
 **Why it matters:** Persistent learning is a requirement for long-lived agents doing ongoing operational work.
+
 ### Semgrep (Milan Williams) — Practical security for AI-generated code
 Milan’s advice was classic security posture, but updated for agents: least-privilege permissions, logging before you need it, hooks for audit logs, and scanning before code ships.
+
 **Why it matters:** If PR volume goes exponential, security posture can’t be manual.
+
 ### Databricks (Ankit Mathur, Aarushi Shah) — Agent sprawl and the gateway layer
 They argued the “inevitable outcome” is coding agent sprawl—different tools for different tasks—which becomes a top cost driver. Their response: a gateway for observability, cost controls, privacy, and unified authentication for MCP tools.
+
 **Why it matters:** Tool standardization won’t happen by decree. It’ll happen via shared governance layers.
 
 ---
