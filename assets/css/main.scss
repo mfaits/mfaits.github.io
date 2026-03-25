@@ -2,6 +2,13 @@
 # Only the main Sass file needs front matter
 ---
 
-$base-font-size: 16px; // default is ~18px
+$type-size-1: 2.2em;
+$type-size-2: 1.75em;
+$type-size-3: 1.4em;
+$type-size-4: 1.15em;
+$type-size-5: 0.95em;
+$type-size-6: 0.85em;
+$type-size-7: 0.75em;
+$type-size-8: 0.65em;
 
 @import "minimal-mistakes";
