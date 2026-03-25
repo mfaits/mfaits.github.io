@@ -2,18 +2,21 @@ title: "Michelle Faits"
 description: "Notes on biology, data science, and building useful tools."
 url: "https://mfaits.github.io"
 
-theme: jekyll-theme-minimal
+remote_theme: just-the-docs/just-the-docs
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
-# Optional extras you can tweak later:
 author: "Michelle Faits"
 github_username: mfaits
+
+color_scheme: light
+search_enabled: true
 
 defaults:
   - scope:
       path: ""
       type: posts
     values:
-      layout: post_with_subscribe
+      layout: default
