@@ -1,6 +1,9 @@
 ---
 title: "Hello World"
 category: blog
+layout: single
+author_profile: true
+classes: wide
 ---
 
 [Here’s](https://www.benkuhn.net/writing/) a good philosophy of blogging, I think.
