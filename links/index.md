@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: single
 title: "Links"
+author_profile: true
+classes: wide
 ---
 
 # Notable essays and books
