@@ -2,21 +2,34 @@ title: "Michelle Faits"
 description: "Notes on biology, data science, and building useful tools."
 url: "https://mfaits.github.io"
 
-remote_theme: just-the-docs/just-the-docs
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
 
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+  - jekyll-include-cache
 
-author: "Michelle Faits"
-github_username: mfaits
-
-color_scheme: light
-search_enabled: true
+author:
+  name: "Michelle Faits"
+  bio: "Biologist, data scientist, and builder of useful tools."
+  location: "Boston, MA"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mfaits"
 
 defaults:
   - scope:
       path: ""
       type: posts
     values:
-      layout: default
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+masthead_title: "Michelle Faits"
+search: true
