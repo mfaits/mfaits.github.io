@@ -10,12 +10,14 @@ plugins:
 
 author:
   name: "Michelle Faits"
-  bio: "Biologist, data scientist, and builder of useful tools."
-  location: "Boston, MA"
+  bio: "Data Science · AI Engineering · Pharma · Biology"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mfaits"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/michelle-faits/"
 
 defaults:
   - scope:
