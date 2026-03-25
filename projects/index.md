@@ -5,10 +5,8 @@ author_profile: true
 classes: wide
 ---
 
-# Projects
-
 {% for post in site.posts %}
-{% if post.category == "projects" %}
+{% if post.categories contains "projects" %}
 <article style="margin: 1.25rem 0;">
   <h3 style="margin-bottom: 0.25rem;">
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
