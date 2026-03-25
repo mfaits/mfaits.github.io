@@ -22,8 +22,9 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: post_with_subscribe
       author_profile: true
+      classes: wide
   - scope:
       path: ""
       type: pages
