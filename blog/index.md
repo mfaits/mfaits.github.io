@@ -6,8 +6,6 @@ author_profile: true
 classes: wide
 ---
 
-# Blog
-
 {% for post in site.posts %}
 {% if post.category == "blog" %}
 <article style="margin: 1.25rem 0;">
