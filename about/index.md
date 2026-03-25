@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: archive
 title: "About"
+permalink: /about/
+author_profile: true
+classes: wide
 ---
 
 # Michelle Faits
