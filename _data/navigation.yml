@@ -7,3 +7,7 @@ main:
     url: /links/
   - title: "Blog"
     url: /blog/
+  - title: "Subscribe"
+    url: /subscribe/
+  - title: "RSS"
+    url: /feed.xml
