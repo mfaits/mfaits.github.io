@@ -10,3 +10,19 @@ search: false
 html {
   font-size: 15px;
 }
+
+.author__name {
+  font-size: 1.1em;
+}
+
+.author__bio {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.author__urls-wrapper,
+.author__urls,
+.author__urls li,
+.author__urls a {
+  font-size: 0.95em;
+}
