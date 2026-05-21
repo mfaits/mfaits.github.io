@@ -21,16 +21,7 @@ Teaching, and especially teaching relatively early in my data science career, ma
 I recently discovered that the recordings of my lectures from when we went remote during the pandemic were not lost to the sands of time, as I’d previously thought. Below is an excerpt of one of the lectures I particularly enjoyed. The students were finishing up a few weeks of work learning about neural networks and as homework coming into this lecture, they were asked to work through a [notebook tutorial](https://colab.research.google.com/drive/1c4Tg0YwBvQhNAZfQXYy0aa6724Q12XmT?usp=sharing) on building a neural network to classify [small pictures of clothes](https://www.kaggle.com/datasets/zalando-research/fashionmnist) into a category like “shirt,” “coat,” etc. In this lecture, I tried to turn the “what” the students did into the “why” we did it. I wanted them to come out of this feeling comfortable about adding layers to neural networks using Keras and having an intuition about what each layer did. I try to explicitly call out what the students should take away from class, and what should not stress them out if they haven’t mastered it yet. I think it’s a good representation of how I approach teaching, as well as presentations in general: focus on intuition and make hard things feel learnable.
 
 <figure style="margin: 2rem 0;">
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
-    <iframe
-      src="https://drive.google.com/file/d/1Vlos-jt3q6SKJii5lzhY1uNzE_NU7X7c/preview"
-      width="100%"
-      height="100%"
-      allow="autoplay"
-      style="position:absolute; top:0; left:0; border:0;">
-    </iframe>
-  </div>
-
+  <iframe src="https://drive.google.com/file/d/1Vlos-jt3q6SKJii5lzhY1uNzE_NU7X7c/preview" width="100%" height="480" allow="autoplay" style="border:0; border-radius:8px;"></iframe>
   <figcaption style="color:#666; font-size:0.9em; margin-top:0.5rem;">
     Excerpt from a remote CoderGirl lecture on neural networks (2020).
   </figcaption>
