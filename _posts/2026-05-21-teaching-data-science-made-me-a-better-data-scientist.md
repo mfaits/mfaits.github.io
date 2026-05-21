@@ -19,3 +19,19 @@ I cared very much about my students, and my primary goal was to help people in S
 Teaching, and especially teaching relatively early in my data science career, made me a better data scientist. I’m a believer in the idea of “see one, do one, teach one” from medical education. You can’t teach unless you really understand, and I found that the pressure to have three hours of content prepared every week really forced me to sit down and cultivate my understanding. There’s a quote from a [post about reading](https://fs.blog/the-buffett-formula/) that I revisit a lot, attributed to Mortimer Adler, which says “The person who says he knows what he thinks but cannot express it usually does not know what he thinks.” I found that to be true about concepts I’ve learned. If I studied the topic, but can’t teach it to someone else, I don’t really have it down. Teaching two 6-months cycles of data science while I was working at my first data science job was extremely good for me to get the fundamentals hammered into my brain, and growing from there has been faster and easier as a result. I don’t know how to recommend to people that they go become teachers for programs like that, because it’s hard to find a program like LaunchCode (and that Data Science course doesn’t exist anymore, and I have no idea how I’d structure a curriculum for a beginner to break into Data Science today anyway). But I can confidently say that if you have the opportunity to teach, you should absolutely take it, because it will force you to sit down and get better. And as an added bonus, you help other people get better as you go.
 
 I recently discovered that the recordings of my lectures from when we went remote during the pandemic were not lost to the sands of time, as I’d previously thought. Below is an excerpt of one of the lectures I particularly enjoyed. The students were finishing up a few weeks of work learning about neural networks and as homework coming into this lecture, they were asked to work through a [notebook tutorial](https://colab.research.google.com/drive/1c4Tg0YwBvQhNAZfQXYy0aa6724Q12XmT?usp=sharing) on building a neural network to classify [small pictures of clothes](https://www.kaggle.com/datasets/zalando-research/fashionmnist) into a category like “shirt,” “coat,” etc. In this lecture, I tried to turn the “what” the students did into the “why” we did it. I wanted them to come out of this feeling comfortable about adding layers to neural networks using Keras and having an intuition about what each layer did. I try to explicitly call out what the students should take away from class, and what should not stress them out if they haven’t mastered it yet. I think it’s a good representation of how I approach teaching, as well as presentations in general: focus on intuition and make hard things feel learnable.
+
+<figure style="margin: 2rem 0;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+    <iframe
+      src="https://drive.google.com/file/d/1Vlos-jt3q6SKJii5lzhY1uNzE_NU7X7c/preview"
+      width="100%"
+      height="100%"
+      allow="autoplay"
+      style="position:absolute; top:0; left:0; border:0;">
+    </iframe>
+  </div>
+
+  <figcaption style="color:#666; font-size:0.9em; margin-top:0.5rem;">
+    Excerpt from a remote CoderGirl lecture on neural networks (2020).
+  </figcaption>
+</figure>
