@@ -6,11 +6,11 @@ category: blog
 tags: [AI, data science, LLMs, RAG]
 ---
 
-This blog post from Byrne Hobart does an excellent job contextualizing the types of project that I’m being asked to build over and over in my data science work lately: [https://www.thediff.co/archive/forward-deployed/](https://www.thediff.co/archive/forward-deployed/)
+This blog post from Byrne Hobart does an excellent job contextualizing the types of project that I’ve been seeing over and over in data science lately: [https://www.thediff.co/archive/forward-deployed/](https://www.thediff.co/archive/forward-deployed/)
 
-I’m a Senior Data Scientist at my org (in West Coast terms, cracked AI Engineer) and part of my work is evaluating and scoping new project requests from business as they come in before they get distributed to engineers and data scientists for building. I see new requests from business stakeholders in their raw form. Repeatedly, for a couple years now, the requests have the following kind of shape - “we have lots of team knowledge stored in disparate places, and we’d like an AI we can talk to that knows all of that stuff.”
+I’m a Senior Data Scientist (in West Coast terms, cracked AI Engineer). I’ve built machine learning and AI systems across multiple organizations, and I try to stay reasonably current on where the field is going. Over the past couple of years, the implementation patterns have changed rapidly — RAG, custom GPTs, agents, whatever comes next — but I keep seeing projects converge on the same underlying problem: “We have lots of team knowledge stored in disparate places, and we’d like an AI we can talk to that knows all of that stuff.”
 
-As a shorthand, I started calling these “filing cabinet” projects at work. As in: “Can you please plug my filing cabinet full of documents into AI?”
+As a shorthand, I started calling these “filing cabinet” projects. As in: “Can you please plug my filing cabinet full of documents into AI?”
 
 The frustration seems to be that LLMs are powerful, but not useful without context. Most business teams do not have their knowledge neatly arranged in a form that an LLM can consume.
 
@@ -18,15 +18,13 @@ Hobart writes:
 
 > “It’s trapped in email inboxes, groupchats, ERPs, CRMs, Excel files, the airwaves of phone calls and also in the heads of (and in the conversations between) doctors, line engineers, and other front-line workers who embody the valuable knowhow they’ve earned through experience.”
 
-This echoes pretty much exactly the issue that business stakeholders bring to me. “All our stuff is in Sharepoint or emails, how do I get an AI that knows all that stuff so I can use it effectively?”
+This echoes pretty much exactly the issue that I see beneath filing cabinet problems. “All our stuff is in Sharepoint or Slack or emails, how do I get an AI that knows all that stuff so I can use it effectively?”
 
-The general pattern we’ve been repeating is to figure out where all the relevant information is, try to enforce some data hygiene about keeping it all in certain defined places moving forward, and then usually vectorize it and expose a RAG system to an LLM chat interface for the requesting team.
+The general pattern we’ve been repeating is to figure out where all the relevant information is, try to enforce some data hygiene about keeping it all in certain defined places moving forward, and then maybe vectorize it and expose a RAG system to an LLM chat interface for the requesting team.
 
 ![A telephone sitting on top of a filing cabinet in a drab office](/assets/images/filing-cabinet-ai.png)
 
-*My custom GPT connected to a RAG API. Slop image source: ChatGPT.*
-
-That “try to enforce some data hygiene” is doing a lot of heavy lifting there. Eventually, people realize they have additional context from other Teams chats that aren’t getting ingested by your bespoke RAG system, or they copy a file from your beautiful “all documents in here can be assumed to be ground truth” repository and they start saving it and editing it locally and then sharing it through other channels, or at the very least, the place where one business team saves all their documents isn’t the same place as another business team so you’ll be starting another filing cabinet project pretty soon with all new data connectors.
+*A custom GPT connected to a RAG API. Slop image source: ChatGPT.*
 
 The fact that filing cabinet projects kept coming up over and over again gave me the intuition that there must be some kind of fundamental first-principles problem going on, but I couldn’t put it into words. I think Hobart nails it though, and that’s why I’ve been widely sharing that post link with people along with a message like “read this if you have time, I think it’s important”:
 
@@ -36,8 +34,8 @@ Fundamentally these requests keep coming back to the same problem that I haven�
 
 But big players like Palantir and the frontier AI labs with their forward-deployed engineers are currently hard at work doing this integration. So:
 
-- This confirmed for me that the filing cabinet problem is not unique to my workplace - lots of organizations are seeing the same thing.
-- We can’t assume the current “but what can I actually DO with AI” feeling is going to hold, as institutional knowledge gets integrated into bits. I think pretty quickly, all my stakeholders that are feeling like “I can’t really ask the AI what I really want because it can’t possibly know all the important and relevant things that I know” aren’t going to feel that way any more, and then AI use for non-tech people is going to feel more like how it feels for engineers now.
+- This confirmed for me that the recurring filing cabinet problem is because lots of organizations are converging on the same problem.
+- We can’t assume the current “but what can I actually DO with AI” feeling is going to hold, as institutional knowledge gets integrated into bits. I think pretty quickly, stakeholders that are feeling like “I can’t really ask the AI what I really want because it can’t possibly know all the important and relevant things that I know” aren’t going to feel that way any more, and then AI use for non-tech people is going to feel more like how it feels for engineers now.
 
 For engineers, AI systems are already increasingly useful because they can be connected to the things we actually work with: the codebase, documentation, tools, logs, APIs, environments. They don’t have to answer a programming question while pretending that none of those things exist. I think nontechnical knowledge work starts feeling very different when the same thing happens for the rest of an institution.
 
@@ -62,7 +60,7 @@ This concept gives me something to steer towards while trying to understand the 
 
 Stay deeply curious and ruthlessly pragmatic. Understand, deeply understand, deep in your bones, the context of what you’re building.
 
-When I was building a truck route optimizer for a company that had warehouses across the US, I requested our materials data with volume measurements for what we stocked in the warehouse. I was told by data teams in corporate that this data did not exist. “You’ll have to ask the warehouse employees to measure them with a tape measure and record it for you,” they said. The team building the optimizer took field trips to the warehouses to talk to the dispatchers who would be using our tool. I mentioned that we didn’t have volume information about our stocked materials, so I was having a hard time building in loading capacity constraints for the available trucks. The dispatchers, rightfully, looked at me like I was an idiot. Of course they had volume information for all materials that they stocked in the warehouse. The warehouse was enormous. It all ran on an inventory system that dictated where things got stored based partly on their size. The entire physical operation depended on knowing this information.
+Long ago in a different data science life, I was building a truck route optimizer for a company that had warehouses across the US, I requested our materials data with volume measurements for what we stocked in the warehouse. I was told by data teams in corporate that this data did not exist. “You’ll have to ask the warehouse employees to measure them with a tape measure and record it for you,” they said. The team building the optimizer had already decided to take field trips to warehouses and talk to the dispatchers who would actually be using our tool. While I was there, I mentioned that we didn’t have volume information about our stocked materials, so I was having a hard time building in loading capacity constraints for the available trucks. The dispatchers, rightfully, looked at me like I was an idiot. Of course they had volume information for all materials that they stocked in the warehouse. The warehouse was enormous. It all ran on an inventory system that dictated where things got stored based partly on their size. The entire physical operation depended on knowing this information.
 
 I asked them what the inventory software was called, which was enough for me to find the underlying data tables, and I was able to integrate the volume constraint into the truck routing tool.
 
