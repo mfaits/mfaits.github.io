@@ -41,7 +41,7 @@ But big players like Palantir and the frontier AI labs with their forward-deploy
 
 For engineers, AI systems are already increasingly useful because they can be connected to the things we actually work with: the codebase, documentation, tools, logs, APIs, environments. They don’t have to answer a programming question while pretending that none of those things exist. I think nontechnical knowledge work starts feeling very different when the same thing happens for the rest of an institution.
 
-For me, after Hobart’s post put these filing cabinet problems into a broader perspective, I was left with this question: if this is what the filing cabinet projects are actually pointing toward, what are the useful things to be working on? I came away with two conclusions.
+For me, after Hobart’s post put these filing cabinet problems into a broader perspective, I was left with this question: if this is what the filing cabinet projects are actually pointing toward, what does this mean for what's next for data scientists and engineers? I came away with two conclusions.
 
 First, I think the right technical direction to focus on is getting very, very good at building what Hobart calls “institutional world models.” Sam Altman says [“almost everyone I’ve ever met would be well-served by spending more time thinking about what to focus on”](https://blog.samaltman.com/how-to-be-successful). Hobart describes the idea this way: institutional world models represent the real-time state of an organization well enough that people can use them to understand what is happening, predict the consequences of decisions, act, and then learn from what happened. That matches what I think business stakeholders have fundamentally been asking for and what I think will allow them to leverage technology most effectively.
 
@@ -53,7 +53,14 @@ Hobart writes:
 >
 > In repeatedly doing this, they not only develop an exceptional big picture understanding of the businesses they work within, but also translate that understanding into software that embodies that representation with more and more accuracy over time, and allows everyone in an organization to use that better global understanding to better solve their local problems.”
 
-This concept gives me something to steer towards while trying to [understand the role of the engineer in the age of AI](https://x.com/simeonGriggs/status/2102866666682249325?s=20). Stay deeply curious and ruthlessly pragmatic. Understand, deeply understand, deep in your bones, the context of what you’re building.
+This concept gives me something to steer towards while trying to understand the role of the engineer in the age of AI, which without something to steer towards can start to feel like this:
+
+<blockquote class="twitter-tweet">
+  <a href="https://twitter.com/simeonGriggs/status/2102866666682249325"></a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Stay deeply curious and ruthlessly pragmatic. Understand, deeply understand, deep in your bones, the context of what you’re building.
 
 When I was building a truck route optimizer for a company that had warehouses across the US, I requested our materials data with volume measurements for what we stocked in the warehouse. I was told by data teams in corporate that this data did not exist. “You’ll have to ask the warehouse employees to measure them with a tape measure and record it for you,” they said. The team building the optimizer took field trips to the warehouses to talk to the dispatchers who would be using our tool. I mentioned that we didn’t have volume information about our stocked materials, so I was having a hard time building in loading capacity constraints for the available trucks. The dispatchers, rightfully, looked at me like I was an idiot. Of course they had volume information for all materials that they stocked in the warehouse. The warehouse was enormous. It all ran on an inventory system that dictated where things got stored based partly on their size. The entire physical operation depended on knowing this information.
 
